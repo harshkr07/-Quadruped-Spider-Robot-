@@ -1,0 +1,36 @@
+// Quadruped Spider Robot - Initial Leg Position
+// Author: Your Name
+// Date: 2025-09-20
+// Moves all legs to the neutral 90° position
+
+#include <Servo.h>   
+
+Servo servo[4][3];  // 4 legs, 3 servos per leg
+
+// Define servo pins for each leg
+const int servo_pin[4][3] = {
+  {2, 3, 4},    // Leg 1
+  {5, 6, 7},    // Leg 2
+  {8, 9, 10},   // Leg 3
+  {11, 12, 13}  // Leg 4
+};
+
+void setup() {
+  // Attach all servos to the pins
+  for (int leg = 0; leg < 4; leg++) {
+    for (int joint = 0; joint < 3; joint++) {
+      servo[leg][joint].attach(servo_pin[leg][joint]);
+      delay(20);  // short delay for servo stabilization
+    }
+  }
+}
+
+void loop() {
+  // Move all servos to 90° (neutral position)
+  for (int leg = 0; leg < 4; leg++) {
+    for (int joint = 0; joint < 3; joint++) {
+      servo[leg][joint].write(90);
+      delay(20);
+    }
+  }
+}
