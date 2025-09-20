@@ -1,3 +1,12 @@
+<img width="673" height="472" alt="Screenshot 2025-09-20 120509" src="https://github.com/user-attachments/assets/9bf6abb3-d890-454f-845c-b3aea7511b89" />
+
+
+<img width="744" height="541" alt="Screenshot 2025-09-20 120638" src="https://github.com/user-attachments/assets/63f65c01-00ec-495d-8845-445149be6e0a" />
+
+
+
+
+
 # 🕷️ Quadruped Spider Robot
 
 This project is a **four-legged (quadruped) robot** designed to mimic the natural movement of a spider.  
